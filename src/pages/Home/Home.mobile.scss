@@ -1,0 +1,14 @@
+@media (max-width: 450px) {
+  .container-search {
+    display: grid !important ;
+    margin: 50px !important ;
+  }
+
+  .card {
+    width: 150px !important;
+
+    .card__top {
+      gap: 65px !important;
+    }
+  }
+}

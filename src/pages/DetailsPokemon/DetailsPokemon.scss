@@ -1,0 +1,116 @@
+@import "./DetailsPokemon-mobile.scss";
+
+.details__container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .details__top {
+    display: flex;
+    align-items: center;
+    gap: 750px;
+
+    svg {
+      height: 26px;
+      width: 26px;
+      cursor: pointer;
+    }
+
+    .toShiny {
+      &[shake="1"] {
+        animation: shake 0.5s 1;
+        color: rgb(214, 203, 43);
+      }
+    }
+  }
+
+  .details__card {
+    display: grid;
+    height: 700px;
+    width: 900px;
+    padding: 26px;
+    border-radius: 70px;
+    background: #f1f1f1;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    h1 {
+      font-weight: 700;
+    }
+
+    img {
+      height: 150px;
+      width: 150px;
+    }
+
+    .pokemon__types-weak-resistance-immune {
+      display: grid;
+      gap: 8px;
+      align-items: center;
+      font-family: "Roboto Mono", monospace;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+      }
+
+      p {
+        padding: 10px;
+        border-radius: 20px;
+      }
+    }
+
+    .pokemon__types {
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      align-items: center;
+      text-align: center;
+
+      p {
+        border-radius: 20px;
+        padding: 10px;
+      }
+    }
+
+    .pokemon__stats {
+      p {
+        font: 500 18px "Roboto Mono", monospace;
+      }
+    }
+
+    .divider {
+      height: 2px;
+      background: #fff;
+      width: 850px;
+    }
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}

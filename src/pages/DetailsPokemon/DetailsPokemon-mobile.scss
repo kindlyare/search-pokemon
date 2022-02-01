@@ -1,0 +1,43 @@
+@media (max-width: 450px) {
+  .details__container {
+    .divider {
+      width: 350px !important ;
+    }
+
+    .details__card {
+      height: 550px !important ;
+      width: 400px !important ;
+
+      .details__top {
+        padding-top: 12px !important ;
+        gap: 250px !important ;
+      }
+
+      h1 {
+        font-size: 24px !important ;
+      }
+
+      svg {
+        height: 22px !important;
+        width: 22px !important;
+      }
+
+      img {
+        height: 100px !important ;
+        width: 100px !important ;
+      }
+
+      p {
+        font-size: 14px !important ;
+        padding: 5px !important ;
+      }
+
+      .pokemon__stats {
+        p {
+          padding: 1px !important ;
+          font-size: 14px !important ;
+        }
+      }
+    }
+  }
+}

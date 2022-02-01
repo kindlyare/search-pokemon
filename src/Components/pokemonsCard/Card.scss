@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+
+  .card {
+    height: 200px;
+    width: 200px;
+    display: grid;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    border: solid 2px #fff;
+    padding: 6px;
+    background-color: #fff;
+    border-radius: 8%;
+    cursor: pointer;
+    will-change: transition;
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.07);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+
+    svg {
+      cursor: pointer;
+    }
+
+    .card__top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 90px;
+
+      svg {
+        height: 22px;
+        width: 22px;
+
+        &[shake="1"] {
+          animation: shake 0.5s;
+          color: rgb(214, 203, 43);
+        }
+      }
+    }
+
+    .pokemon {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+
+      .pokemon__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 72px;
+          width: 72px;
+        }
+      }
+    }
+
+    .pokemon__types {
+      width: 75px;
+      margin: auto;
+      padding: 2px;
+      background: #fff;
+      border-radius: 16px;
+      margin-top: 4px;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
